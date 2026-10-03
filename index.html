@@ -18,6 +18,27 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="fonts/fonts.css">
 
+  <!-- Paydirect tracker -->
+  <script src="https://paydirect-tracker.dugri.workers.dev/tracker.js" defer></script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '943448134949484');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=943448134949484&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
@@ -191,208 +212,7 @@
     }
     .body-img-caption { font-size: 13px; line-height: 1.5; color: #888; font-style: italic; text-align: left; margin: -4px 2px 28px; }
   
-  </style>
-
-  <style id="ssq-css">.ssq-overlay{position:fixed;inset:0;z-index:99999;display:none;background:rgba(12,10,35,.72);overflow-y:auto;-webkit-overflow-scrolling:touch;padding:24px 12px}
-.ssq-overlay.open{display:block}
-.ssq-card{position:relative;max-width:560px;margin:4vh auto;background:#fff;border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.4);padding:34px 26px 30px;font-family:'Poppins',Arial,Helvetica,sans-serif;color:#1D254B}
-.ssq-close{position:absolute;top:10px;right:14px;border:0;background:none;font-size:26px;line-height:1;color:#9AA8BB;cursor:pointer;padding:6px}
-.ssq-close:hover{color:#0A1C4E}
-.ssq-progress{height:8px;background:#EEF2F8;border-radius:99px;overflow:hidden;margin:0 0 22px}
-.ssq-progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#1D254B,#0A1C4E);border-radius:99px;transition:width .35s ease}
-.ssq-kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E19626;margin:0 0 8px}
-.ssq-q{font-family:'Bitter',Georgia,serif;font-size:23px;font-weight:800;line-height:1.25;color:#0A1C4E;margin:0 0 6px}
-.ssq-hint{font-size:13.5px;color:#657D96;margin:0 0 18px}
-.ssq-opts{display:flex;flex-direction:column;gap:10px}
-.ssq-opt{display:block;width:100%;text-align:left;background:#F6F8FB;border:2px solid #D8E0EC;border-radius:12px;padding:14px 16px;font-size:15.5px;font-weight:600;color:#1D254B;cursor:pointer;transition:border-color .15s,background .15s;font-family:inherit}
-.ssq-opt:hover{border-color:#E19626}
-.ssq-opt.sel{border-color:#0A1C4E;background:#EEF2F8}
-
-.ssq-continue{margin-top:18px}
-.ssq-continue:disabled{opacity:.45;cursor:not-allowed}
-.ssq-back{background:none;border:0;color:#657D96;font-size:13px;cursor:pointer;margin-top:14px;padding:4px;font-family:inherit}
-.ssq-back:hover{color:#0A1C4E;text-decoration:underline}
-/* loader */
-.ssq-loader{text-align:center;padding:36px 6px 30px}
-.ssq-spin{width:74px;height:74px;border-radius:50%;border:8px solid #F0EAD8;border-top-color:#E19626;margin:0 auto 26px;animation:ssqspin 1s linear infinite}
-@keyframes ssqspin{to{transform:rotate(360deg)}}
-.ssq-loadtitle{font-family:'Bitter',Georgia,serif;font-size:24px;font-weight:800;color:#0A1C4E;margin:0 0 12px}
-.ssq-wait{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#E19626;margin:0}
-/* result */
-.ssq-res{text-align:center}
-.ssq-badge{display:inline-block;background:#0A1C4E;color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border-radius:99px;padding:6px 14px;margin:0 0 10px}
-.ssq-restitle{font-family:'Bitter',Georgia,serif;font-size:22px;font-weight:800;line-height:1.2;color:#0A1C4E;margin:0 0 12px}
-.ssq-restitle b{color:#E19626}
-.ssq-panel{background:#EEF2F8;border-radius:12px;padding:12px 14px 8px;text-align:left;margin:0 0 10px}
-.ssq-panel h4{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0A1C4E;margin:0 0 6px}
-.ssq-row{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;padding:5px 0;border-top:1px solid #D8E0EC}
-.ssq-row:first-of-type{border-top:0}
-.ssq-row b{color:#1D254B;white-space:nowrap}
-.ssq-row span{color:#33415E;text-align:right}
-.ssq-est{background:#fff;border:2px solid #0A1C4E;border-radius:12px;padding:12px 14px;margin:0 0 10px}
-.ssq-est h4{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0A1C4E;margin:0 0 5px}
-.ssq-est .big{font-family:'Bitter',Georgia,serif;font-size:19px;font-weight:800;color:#0A1C4E;margin:0 0 6px}
-.ssq-est p{font-size:12px;line-height:1.5;color:#33415E;margin:0}
-.ssq-prod{position:relative;display:block;margin:0 0 8px}
-.ssq-prod img{width:100%;max-width:440px;display:block;margin:0 auto}
-.ssq-scarce{margin:0 0 10px;text-align:left}
-.ssq-scarce .bar{height:10px;background:#EEF2F8;border-radius:99px;overflow:hidden}
-.ssq-scarce .bar i{display:block;height:100%;width:82%;background:linear-gradient(90deg,#991B1B,#E19626);border-radius:99px}
-.ssq-scarce span{display:block;font-size:11.5px;font-weight:700;color:#991B1B;margin-top:5px}
-.ssq-ship{font-size:12.5px;color:#1D254B;margin:0 0 10px}
-.ssq-cta{animation:ssqpulse 1.6s ease-in-out infinite}
-@keyframes ssqpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
-.ssq-card.res .ssq-progress{display:none}
-.ssq-card.res{padding:26px 18px 18px}
-@media (max-width:480px){.ssq-card.res{padding:16px 12px 12px}.ssq-card.res .ssq-close{top:4px;right:8px}.ssq-card.res .ssq-restitle{font-size:16.5px;margin:0 0 6px}.ssq-card.res .ssq-badge{font-size:9.5px;padding:4px 10px;margin:0 0 6px}.ssq-card.res .ssq-row{font-size:11px;padding:3px 0;gap:8px}.ssq-card.res .ssq-panel{padding:8px 10px 5px;margin:0 0 7px}.ssq-card.res .ssq-panel h4{font-size:10px;margin:0 0 4px}.ssq-card.res .ssq-est{padding:8px 10px;margin:0 0 7px}.ssq-card.res .ssq-est h4{font-size:10px;margin:0 0 3px}.ssq-card.res .ssq-est .big{font-size:15px;margin:0 0 4px}.ssq-card.res .ssq-est p{font-size:10.5px;line-height:1.4}.ssq-card.res .ssq-prod{margin:0 0 5px}.ssq-card.res .ssq-prod img{max-width:300px}.ssq-card.res .ssq-scarce{margin:0 0 7px}.ssq-card.res .ssq-scarce .bar{height:8px}.ssq-card.res .ssq-scarce span{font-size:10.5px;margin-top:4px}.ssq-card.res .ssq-ship{margin:0 0 7px;font-size:11.5px}.ssq-card.res .ssq-cta{padding:14px 14px;font-size:15px;border-radius:8px}}
-@media (max-width:480px){.ssq-overlay{padding:10px 8px}.ssq-card{padding:24px 14px 18px;margin:0 auto}.ssq-q{font-size:20px}.ssq-restitle{font-size:20px}.ssq-prod img{max-width:360px}}
-/* ==== QUIZ COMPACTO — cabe em uma tela ==== */
-@media (max-width:768px),(max-height:860px){
-  .ssq-overlay{padding:8px}
-  .ssq-card{margin:0 auto;padding:16px 14px 14px;border-radius:14px;max-width:520px}
-  .ssq-progress{height:6px;margin:0 0 12px}
-  .ssq-close{top:4px;right:8px;font-size:24px}
-  .ssq-kicker{font-size:11px;letter-spacing:.12em;margin:0 0 5px;padding-right:26px}
-  .ssq-q{font-size:18px;line-height:1.22;margin:0 0 4px;padding-right:26px}
-  .ssq-hint{font-size:12px;margin:0 0 9px}
-  .ssq-opts{gap:6px}
-  .ssq-opt{padding:8px 12px;font-size:14px;line-height:1.3;border-radius:9px}
-  .ssq-back{font-size:12px;margin-top:8px;padding:2px}
-  .ssq-loader{padding:26px 6px 22px}
-  .ssq-spin{width:58px;height:58px;border-width:6px;margin:0 auto 18px}
-  .ssq-loadtitle{font-size:20px;margin:0 0 8px}
-  .ssq-badge{font-size:10px;padding:5px 12px;margin:0 0 8px}
-  .ssq-restitle{font-size:19px;margin:0 0 8px}
-  .ssq-est{padding:10px 12px;margin:0 0 8px}
-  .ssq-est .big{font-size:17px;margin:0 0 4px}
-  .ssq-est p{font-size:11.5px;line-height:1.45}
-  .ssq-prod{margin:0 0 6px}
-  .ssq-prod img,.ssq-card.res .ssq-prod img{max-width:100%}
-  .ssq-scarce{margin:0 0 8px}
-  .ssq-scarce .bar{height:8px}
-  .ssq-scarce span{font-size:11px;margin-top:4px}
-  .ssq-ship{font-size:12px;margin:0 0 8px}
-  .ssq-continue{margin-top:12px}
-}
-@media (max-height:700px){
-  .ssq-card{padding:12px 12px 12px}
-  .ssq-progress{margin:0 0 9px}
-  .ssq-q{font-size:17px;margin:0 0 3px}
-  .ssq-hint{font-size:11.5px;margin:0 0 7px}
-  .ssq-opts{gap:5px}
-  .ssq-opt{padding:7px 11px;font-size:13.5px}
-  .cta,.ssq-continue,.ssq-cta{font-size:15px;padding:13px 16px}
-  .ssq-continue{margin-top:8px}
-}
-/* ==== EMOJI DAS OPCOES ==== */
-.ssq-opt{display:flex;align-items:center;gap:11px}
-.ssq-emo{flex:0 0 auto;width:1.35em;font-size:19px;line-height:1;text-align:center;
-  font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}
-.ssq-lbl{flex:1 1 auto;min-width:0}
-.ssq-opt.sel::after{content:'✓';margin-left:auto;flex:0 0 auto;color:#0A1C4E;font-weight:800}
-@media (max-width:768px),(max-height:860px){ .ssq-emo{font-size:17px} .ssq-opt{gap:9px} }
-@media (max-height:700px){ .ssq-emo{font-size:16px} }
-/* ---- base button rules -------------------------------------------------
-   The source page only shipped MODIFIERS for these (.ssq-cta{animation},
-   .cta,.ssq-continue,.ssq-cta{font-size}) — the actual button look lived on
-   its own global `.cta` class, which does not exist on our landers (they use
-   `.cta-btn`). Without these the CTA and Continue render as native controls.
-   Values mirror the hosts' .cta-btn so the quiz reads as part of the page. */
-.ssq-cta,.ssq-continue{
-  display:block;width:100%;box-sizing:border-box;
-  font-family:'Poppins',Arial,Helvetica,sans-serif;font-weight:800;
-  text-align:center;text-decoration:none;letter-spacing:.3px;line-height:1.25;
-  background:#479C1A;color:#fff;border:0;border-radius:8px;cursor:pointer;
-  transition:background .2s,transform .1s}
-.ssq-cta:hover,.ssq-continue:hover{background:#3F8A17;transform:translateY(-1px)}
-.ssq-cta{padding:18px 20px;font-size:17px;box-shadow:0 6px 22px rgba(71,156,26,.35)}
-.ssq-continue{padding:15px 18px;font-size:15px;box-shadow:0 4px 14px rgba(71,156,26,.28)}
-.ssq-back{display:block;width:100%;margin-top:10px;text-align:center}
-
-/* Inline framing on question 1 only — replaces the old intro gate screen. */
-.ssq-pre{font-family:'Poppins',Arial,sans-serif;font-size:13px;line-height:1.45;
-  color:#41506B;background:#F6F8FB;border-left:3px solid #479C1A;
-  border-radius:0 6px 6px 0;padding:9px 12px;margin:0 0 14px}
-@media (max-width:768px){ .ssq-pre{font-size:12.5px;padding:8px 10px;margin-bottom:12px} }
-
-/* ---- answer echo -------------------------------------------------------
-   The verdict quotes the reader's own answers back. Both quizzes this was
-   swiped from claim "based on your responses" while never reading them. */
-.ssq-echo{font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:1.5;
-  color:#33415E;background:#F6F8FB;border-radius:10px;padding:9px 12px;margin:0 0 10px;text-align:left}
-.ssq-echo b{color:#0A1C4E;font-weight:700}
-/* Risk line directly under the CTA, where the hesitation actually happens. */
-.ssq-ctanote{font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:11.5px;line-height:1.45;
-  color:#657D96;margin:8px 0 0;text-align:center}
-@media (max-width:768px),(max-height:860px){
-  .ssq-echo{font-size:11.5px;padding:7px 10px;margin:0 0 8px}
-  .ssq-ctanote{font-size:11px;margin:6px 0 0}
-}
-@media (max-width:480px){
-  .ssq-card.res .ssq-echo{font-size:10.5px;padding:6px 9px;margin:0 0 6px}
-}
-
-/* ---- personal cost line (urgency fork) ---------------------------------
-   Mirrors the host lander's own .urgent-banner palette so it reads as the
-   page speaking, not a bolted-on alarm. */
-.ssq-urge{font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12.5px;line-height:1.5;
-  color:#222;background:#FDF6D8;border-left:3px solid #C0392B;
-  border-radius:0 6px 6px 0;padding:9px 12px;margin:0 0 10px;text-align:left}
-@media (max-width:768px),(max-height:860px){ .ssq-urge{font-size:11.5px;padding:7px 10px;margin:0 0 8px} }
-@media (max-width:480px){ .ssq-card.res .ssq-urge{font-size:10.5px;padding:6px 9px;margin:0 0 6px} }
-
-/* A-D additions (render only when the preset configures them) */
-.ssq-age{font-size:14px;color:#556;line-height:1.5;margin:2px 0 10px}
-.ssq-rev{border:1px solid #e2e5e9;border-radius:10px;background:#fbfaf7;padding:12px 14px;margin:14px 0;text-align:left}
-.ssq-rev .stars{font-size:13px;color:#f59e0b;margin:0 0 6px}
-.ssq-rev .vp{color:#15803D;font-weight:700;font-size:12px}
-.ssq-rev .rq{font-size:14.5px;line-height:1.5;color:#222;margin:0 0 8px}
-.ssq-rev .who{font-size:12.5px;color:#667;margin:0}
-.ssq-unlock{font-size:15px;line-height:1.45;margin:12px 0 4px}
-.ssq-save{text-align:center;padding:8px 0}
-.ssq-save .ssq-continue{margin-top:14px}
-@media (max-width:768px){.ssq-rev .rq{font-size:14px}.ssq-age{font-size:13.5px}}
-
-.ssq-more{margin-top:16px}
-</style>
-  <style id="ssq-mobile-repair">/* SlimSoda FB mobile quiz repair, 2026-09-11. */
-body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobile-open .sticky-bar{display:none!important}
-#ssqOverlay[data-ssq-build]{box-sizing:border-box;overscroll-behavior:contain}
-#ssqOverlay[data-ssq-build] *{box-sizing:border-box}
-#ssqOverlay[data-ssq-build] .ssq-card{display:flex;flex-direction:column;max-height:calc(100dvh - 64px);padding:54px 22px 0;overflow:hidden}
-#ssqOverlay[data-ssq-build] .ssq-progress{flex:none;margin:0 0 16px}
-#ssqOverlay[data-ssq-build] #ssqBody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:0 2px 20px}
-#ssqOverlay[data-ssq-build] .ssq-footer{flex:none;background:#fff;border-top:1px solid #d8e0ec;padding:12px 0 max(12px,env(safe-area-inset-bottom));z-index:2}
-#ssqOverlay[data-ssq-build] .ssq-footer:empty{display:none}
-#ssqOverlay[data-ssq-build] .ssq-opt{min-height:56px;padding:14px 16px;font-size:17px;line-height:1.4;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-opts{gap:10px}
-#ssqOverlay[data-ssq-build] .ssq-emo{font-size:21px}
-#ssqOverlay[data-ssq-build] .ssq-close{top:3px;right:6px;width:48px;height:48px;padding:0;font-size:28px;color:#53647b;z-index:3;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-back{min-height:48px;padding:12px;font-size:15px;margin:4px 0 0;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-continue,#ssqOverlay[data-ssq-build] .ssq-cta{min-height:56px;font-size:17px;padding:16px;line-height:1.3;margin:0;animation:none;transform:none;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-q{font-size:23px;line-height:1.25;padding:0;margin:0 0 12px}
-#ssqOverlay[data-ssq-build] .ssq-kicker{font-size:12px;margin:0 0 8px;padding:0}
-#ssqOverlay[data-ssq-build] .ssq-hint,#ssqOverlay[data-ssq-build] .ssq-pre{font-size:15px;line-height:1.5}
-#ssqOverlay[data-ssq-build] .ssq-hint{margin-bottom:16px}
-#ssqOverlay[data-ssq-build] .ssq-opt.sel{background:#e8f3e3;border-color:#367b19}
-#ssqOverlay[data-ssq-build] .ssq-opt[data-multi="true"]:after{content:'';width:23px;height:23px;border:2px solid #8999ac;border-radius:5px;flex:none;margin-left:auto}
-#ssqOverlay[data-ssq-build] .ssq-opt[data-multi="true"].sel:after{content:'✓';color:white;background:#367b19;border-color:#367b19;text-align:center;line-height:19px;font-size:17px}
-#ssqOverlay[data-ssq-build] :focus-visible{outline:3px solid #2473ba;outline-offset:2px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-restitle{font-size:23px;line-height:1.3;margin:12px 0}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-badge{font-size:12px;max-width:100%;padding:7px 12px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est{padding:14px;margin:12px 0}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est h4{font-size:12px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est .big{font-size:21px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est p,#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-ship,#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-unlock{font-size:15px;line-height:1.5}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-scarce span{font-size:13px;line-height:1.5}
-#ssqOverlay[data-ssq-build] .ssq-prod img{max-width:340px}
-@media(max-width:768px){
- #ssqOverlay[data-ssq-build]{padding:0;overflow:hidden;background:#fff}
- #ssqOverlay[data-ssq-build] .ssq-card,#ssqOverlay[data-ssq-build] .ssq-card.res{width:100%;max-width:none;height:100vh;height:100dvh;max-height:none;margin:0;border-radius:0;box-shadow:none;padding:calc(54px + env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left))}
- #ssqOverlay[data-ssq-build] .ssq-close{top:calc(3px + env(safe-area-inset-top));right:max(6px,env(safe-area-inset-right))}
-}
-</style>
-</head>
+  </style></head>
 <body>
 
 <div class="page-inner">
@@ -877,7 +697,7 @@ body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobil
       <p>The batches are small because I check them. <strong>When this one is gone, the free second tub goes with it.</strong></p>
 
       <div class="cta-wrap">
-        <a href="https://trk.nailcarehub.co/click" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">YES — SEND MY 2 TUBS ($29.99, 2ND FREE) →</a>
+        <a href="https://slimsodapowder.com/cc2/dtc/pay/checkout.php?package=6b19aj&hid=b2lkPW9mZl81MDU4NzI1JmFpZD1hZmZfODUwMDQzMiZ1aWQ9YmxfNzA0MTEyNQ%3D%3D&affid=aff_8500432" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">YES — SEND MY 2 TUBS ($29.99, 2ND FREE) →</a>
         <div class="cta-subtext"><strong>60-Day Empty-Tub Money-Back Guarantee</strong></div>
       </div>
 
@@ -936,7 +756,7 @@ body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobil
       <p><strong>SlimSoda gets 60 days to do all three jobs. Otherwise the full $29.99 comes back to you.</strong></p>
 
       <div class="cta-wrap">
-        <a href="https://trk.nailcarehub.co/click" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">TRY SLIMSODA RISK-FREE FOR 60 DAYS →</a>
+        <a href="https://slimsodapowder.com/cc2/dtc/pay/checkout.php?package=6b19aj&hid=b2lkPW9mZl81MDU4NzI1JmFpZD1hZmZfODUwMDQzMiZ1aWQ9YmxfNzA0MTEyNQ%3D%3D&affid=aff_8500432" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">TRY SLIMSODA RISK-FREE FOR 60 DAYS →</a>
       </div>
 
       <hr>
@@ -1016,11 +836,11 @@ body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobil
       <p><strong>The next family photograph can include you.</strong></p>
 
       <div class="cta-wrap">
-        <a href="https://trk.nailcarehub.co/click" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">SEND MY 2 TUBS OF SLIMSODA ($29.99) →</a>
+        <a href="https://slimsodapowder.com/cc2/dtc/pay/checkout.php?package=6b19aj&hid=b2lkPW9mZl81MDU4NzI1JmFpZD1hZmZfODUwMDQzMiZ1aWQ9YmxfNzA0MTEyNQ%3D%3D&affid=aff_8500432" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">SEND MY 2 TUBS OF SLIMSODA ($29.99) →</a>
         <div class="cta-subtext"><strong>Buy 1, Get 1 FREE · 60-Day Empty-Tub Guarantee</strong></div>
       </div>
 
-      <p><strong>P.S.</strong> One more thing, for the woman whose husband rolls his eyes when another box arrives. This box is the last one, or it is free. Both tubs, 60 days, every penny back if the food noise does not quiet and the scale does not move—and nobody argues with you about it. Two tubs, $29.99, protected for 60 days: <a href="https://trk.nailcarehub.co/click" target="_blank" rel="noopener nofollow sponsored"><strong>order here</strong></a>.</p>
+      <p><strong>P.S.</strong> One more thing, for the woman whose husband rolls his eyes when another box arrives. This box is the last one, or it is free. Both tubs, 60 days, every penny back if the food noise does not quiet and the scale does not move—and nobody argues with you about it. Two tubs, $29.99, protected for 60 days: <a href="https://slimsodapowder.com/cc2/dtc/pay/checkout.php?package=6b19aj&hid=b2lkPW9mZl81MDU4NzI1JmFpZD1hZmZfODUwMDQzMiZ1aWQ9YmxfNzA0MTEyNQ%3D%3D&affid=aff_8500432" target="_blank" rel="noopener nofollow sponsored"><strong>order here</strong></a>.</p>
 
       <div class="comments-section">
         <div class="comments-header">
@@ -1387,7 +1207,7 @@ body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobil
 
 
 <div class="sticky-cta" id="stickyCta">
-  <a href="https://trk.nailcarehub.co/click" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">Get 2 SlimSoda Tubs — $29.99 →</a>
+  <a href="https://slimsodapowder.com/cc2/dtc/pay/checkout.php?package=6b19aj&hid=b2lkPW9mZl81MDU4NzI1JmFpZD1hZmZfODUwMDQzMiZ1aWQ9YmxfNzA0MTEyNQ%3D%3D&affid=aff_8500432" class="cta-btn cta-green" target="_blank" rel="noopener nofollow sponsored">Get 2 SlimSoda Tubs — $29.99 →</a>
 </div>
 
 <script>
@@ -1397,457 +1217,6 @@ body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobil
   window.addEventListener("scroll",c);c();
 })();
 </script>
-
-<div class="ssq-overlay" id="ssqOverlay" data-ssq-build="slimsoda-mobile-20260911-v1" role="dialog" aria-modal="true">
-  <div class="ssq-card">
-    <button class="ssq-close" id="ssqClose" aria-label="Close">×</button>
-    <div class="ssq-progress" id="ssqProg"><i></i></div>
-    <div id="ssqBody"></div>
-  </div>
-</div>
-<script>(function(){
-  "use strict";
-  var CFG = {"productImg": "images/slimsoda_adv2_11_product_shot.jpg", "preamble": "<b>Before you order</b> — 5 quick questions so you can see whether the recipe is a match for your body, and today’s launch price.", "badge": "✨ Congratulations — your result is ready", "title": "You’re a perfect match for <b>SlimSoda!</b>", "estBig": "18–29 lbs in the first 30 days", "estSub": "That’s just month one. Women who answered like you — and stayed with the full recipe every morning — have lost <b>65+ lbs</b> and kept it off.", "scarce": "<div class=\"ssq-scarce\"><div class=\"bar\"><i></i></div><span>⚠️ 82% of this launch batch already reserved</span></div>", "cta": "YES — SEND MY 2 TUBS ($29.99, 2ND FREE) →", "unlock": "You’re a match — so today’s launch price stands: <b>$29.99, second tub free</b>.", "exitSave": {"title": "One second — your result’s about 20 seconds away.", "sub": "A few more questions and you’ll see your result — and today’s $29.99 launch price.", "keep": "Keep going →", "leave": "No thanks"}};
-
-  /* Every CTA on the host page keeps its real checkout href. We intercept the click,
-     show the quiz, and hand the SAME href to the final button. If anything in here
-     throws, preventDefault never runs and the CTA behaves exactly as it does today. */
-  var CTA_SEL = 'a[href*="trk.nailcarehub.co/click"]';
-
-  var QS = CFG.questions || [
-
-    {k:'Step 1 of 5 – About You', label:'Age', multi:false,
-     q:'What is your age range?',
-     e:['👩','👩‍🦰','👩‍🦱','👩‍🦳','👵'],
-     o:['Under 35','35–44','45–54','55–64','65+']},
-    {k:'Step 2 of 5 – Symptoms', label:'Symptoms', multi:true,
-     q:'Which of these do you currently experience?',
-     hint:'Select all that apply – then hit Continue',
-     e:['😴','🫃','🍫','🌡️','😟','🔁','✅'],
-     o:['Fatigue & low energy','Belly bloating','Sugar cravings','Slow metabolism','Mood swings','Weight keeps coming back','None of the above']},
-    {k:'Step 3 of 5 – Your Body', label:'Current weight', multi:false,
-     q:'What is your current weight range?',
-     e:['⬇️','↘️','➡️','↗️','⬆️'],
-     o:['Under 140 lbs','140–169 lbs','170–199 lbs','200–229 lbs','230 lbs or more']},
-    {k:'Step 4 of 5 – Your Body', label:'Weight to lose', multi:false,
-     q:'How much weight would you like to lose in 90 days?',
-     e:['🎯','🔥','💎','🚀'],
-     o:['5–25 lbs','26–50 lbs','51–80 lbs','80+ lbs']},
-    {k:'Step 5 of 5 – Your Experience', label:'Already tried', multi:true,
-     q:'What have you already tried?',
-     hint:'Select all that apply – then hit Continue',
-     e:['🥗','🏃‍♀️','🍬','🥤','💊','💉','🆕'],
-     o:['Diet or calorie-counting programs','Exercise or workout plans','Gummies, teas, or fat burners','Baking soda water on its own','Berberine or another single ingredient','Weight-loss injections','Nothing yet']}
-  ];
-  var LOADERS = CFG.loaders || ['Reviewing your profile…','Calculating your dosage…','Preparing your personalized formula…'];
-
-  var ov   = document.getElementById('ssqOverlay'),
-      body = document.getElementById('ssqBody'),
-      card = ov && ov.querySelector('.ssq-card'),
-      prog = ov && ov.querySelector('#ssqProg i');
-  if (!ov || !body) return;
-
-  var answers = [], step = 0, ctaHref = '';
-
-  // One timer and one transition per question, including rapid touch input.
-  var timer = null, completed = false, trigger = null, previousOverflow = '';
-  var footer = document.createElement('div');
-  footer.className = 'ssq-footer'; card.appendChild(footer);
-  ov.setAttribute('aria-label', 'SlimSoda quiz');
-  function stopTimer(){ if (timer !== null) clearTimeout(timer); timer = null; }
-  function later(fn, ms){ stopTimer(); timer = setTimeout(function(){ timer=null; if(ov.classList.contains('open')) fn(); }, ms); }
-  function resetView(){ stopTimer(); footer.innerHTML=''; body.scrollTop=0; ov.scrollTop=0; }
-  function arrange(){
-    body.querySelectorAll('#ssqCont,#ssqBack,#ssqKeep,#ssqLeave,#ssqGo,#ssqMore,.ssq-ctanote').forEach(function(el){ footer.appendChild(el); });
-    body.scrollTop=0; ov.scrollTop=0;
-    var title=body.querySelector('h3');
-    if(title){ title.setAttribute('tabindex','-1'); title.focus({preventScroll:true}); }
-  }
-
-
-  /* The quiz sits AFTER the RedTrack lp_click, so drop-off inside it is invisible in
-     RedTrack. These events are the only way to read where the gate leaks. */
-  function ev(name, params){
-    try { if (typeof gtag === 'function') gtag('event', name, params || {}); } catch(e){}
-    try { (window.dataLayer = window.dataLayer || []).push(Object.assign({event:name}, params||{})); } catch(e){}
-    /* Clarity is the ONLY analytics on these landers that can actually report these.
-       gtag fires into AW-18089736124, a Google Ads CONVERSION tag with no GA4 property
-       behind it, so named events land nowhere — the gate ran blind 08-21..08-26 because
-       of exactly that. Clarity custom events are filterable in the dashboard AND on
-       session recordings. clarity('event') takes no properties, so params are flattened
-       into the event name. */
-    try {
-      if (typeof window.clarity === 'function') {
-        window.clarity('event', name);
-        if (params && params.step != null) {
-          window.clarity('event', name + '_' + params.step);
-          window.clarity('set', 'ssq_step', String(params.step));
-        }
-        window.clarity('set', 'ssq_seen', '1');
-      }
-    } catch(e){}
-    /* Meta pixel — the counter that makes quiz drop-off measurable at all.
-       Without a CTA-click event, Meta IC comes from the MERCHANT checkout, so it counts
-       people who already got through the quiz and tells you nothing about the gate.
-       With it: SSQuizOpen = modal opens, RedTrack lp_clicks = completions, gap = the toll.
-       trackCustom NOT InitiateCheckout — merging with the merchant's IC corrupts the
-       count and poisons anything optimising on it. No-ops safely if no pixel on the page. */
-    try {
-      if (typeof fbq === 'function') {
-        if (name === 'quiz_open')     fbq('trackCustom', 'SSQuizOpen');
-        if (name === 'quiz_complete') fbq('trackCustom', 'SSQuizComplete');
-        if (name === 'quiz_abandon')  fbq('trackCustom', 'SSQuizAbandon',
-                                          { step: (params && params.step) || 0 });
-        if (name === 'quiz_cta_click')fbq('trackCustom', 'SSQuizCtaClick');
-      }
-    } catch(e){}
-  }
-
-  function withParams(u){
-    try {
-      var qs = location.search.replace(/^\?/, '');
-      if (!qs || !u || u === '#') return u;
-      return u + (u.indexOf('?') > -1 ? '&' : '?') + qs;
-    } catch(e){ return u; }
-  }
-  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
-  var PROG0 = CFG.progStart || 0;
-  function setProg(p){ if (prog) prog.style.width = (PROG0 + p * (100 - PROG0) / 100) + '%'; }
-
-  function open(href){
-    ctaHref = href || ctaHref;
-    stopTimer();
-    trigger=document.activeElement;
-    previousOverflow=document.body.style.overflow;
-    ov.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    document.body.classList.add('ssq-mobile-open');
-    if (card) card.classList.remove('res');
-    ev('quiz_open', {});
-    /* Resume after completion: step is already past the last question, so render()
-       would throw AFTER preventDefault and kill the CTA. Show their verdict instead —
-       result() re-reads ctaHref, so this click's clickid still wins. */
-    if (step >= QS.length) result(); else render();
-  }
-  function realClose(){
-    stopTimer();
-    ov.classList.remove('open');
-    document.body.style.overflow = previousOverflow;
-    document.body.classList.remove('ssq-mobile-open');
-    if(trigger && trigger.focus) trigger.focus({preventScroll:true});
-    ev(completed ? 'quiz_close_after_result' : 'quiz_abandon', {step:step+1});
-  }
-  /* Exit-save: one calm catch on the first close attempt BEFORE the result. This is
-     friction at the exit, not the entry — different animal from the intro screen we
-     killed (that taxed people on the way IN). Second close is always honoured. */
-  var saveShown = false;
-  function close(){
-    stopTimer();
-    if (CFG.exitSave && !saveShown && !(card && card.classList.contains('res'))){
-      saveShown = true;
-      ev('quiz_save_shown', {step: step + 1});
-      resetView();
-      var E = CFG.exitSave;
-      body.innerHTML = '<div class="ssq-save"><h3 class="ssq-q">' + E.title + '</h3>'
-        + '<p class="ssq-hint">' + E.sub + '</p>'
-        + '<button type="button" class="ssq-continue" id="ssqKeep">' + E.keep + '</button>'
-        + '<button type="button" class="ssq-back" id="ssqLeave">' + E.leave + '</button></div>';
-      var k = document.getElementById('ssqKeep'), l = document.getElementById('ssqLeave');
-      if (k) k.onclick = function(){ ev('quiz_save_kept', {}); if (step >= QS.length) result(); else render(); };
-      if (l) l.onclick = realClose;
-      arrange();
-      return;
-    }
-    realClose();
-  }
-
-  function render(){
-    resetView();
-    var Q=QS[step], previous=answers[step];
-    var sel=Q.multi && Array.isArray(previous) ? previous.slice() : [];
-    setProg(step / QS.length * 100);
-    /* Framing sits INLINE on the first question, never on its own screen. An intro step
-       gives people somewhere to bounce ("ugh, a quiz"); this way the first commitment is
-       already in front of them and the reason-why still gets said. */
-    var h = (step === 0 && CFG.preamble ? '<p class="ssq-pre">' + CFG.preamble + '</p>' : '')
-          + '<p class="ssq-kicker">' + Q.k + '</p><h3 class="ssq-q">' + Q.q + '</h3>';
-    if (Q.hint) h += '<p class="ssq-hint">' + Q.hint + '</p>';
-    h += '<div class="ssq-opts">';
-    Q.o.forEach(function(o, i){
-      h += '<button type="button" class="ssq-opt" data-i="' + i + '">'
-         + (Q.e && Q.e[i] ? '<span class="ssq-emo">' + Q.e[i] + '</span>' : '')
-         + '<span class="ssq-lbl">' + o + '</span></button>';
-    });
-    h += '</div>';
-    if (Q.multi) h += '<button type="button" class="ssq-continue" id="ssqCont" disabled>Continue →</button>';
-    if (step > 0) h += '<button type="button" class="ssq-back" id="ssqBack">← Back</button>';
-    body.innerHTML = h;
-
-
-    var cont = document.getElementById('ssqCont'), advancing = false;
-    var buttons = body.querySelectorAll('.ssq-opt');
-    function sync(){
-      buttons.forEach(function(btn){
-        var value=Q.o[+btn.dataset.i];
-        var selected=Q.multi ? sel.indexOf(value)>-1 : answers[step]===value;
-        btn.classList.toggle('sel',selected);
-        btn.setAttribute('aria-pressed',String(selected));
-        btn.setAttribute('data-multi',String(Q.multi));
-      });
-      if(cont) cont.disabled=!sel.length;
-    }
-    function exclusive(value){ return value==='None of the above' || value==='Nothing yet'; }
-    buttons.forEach(function(btn){
-      btn.onclick=function(){
-        if(advancing) return;
-        var v=Q.o[+btn.dataset.i];
-        if(Q.multi){
-          var idx=sel.indexOf(v);
-          if(idx>-1) sel.splice(idx,1);
-          else if(exclusive(v)) sel=[v];
-          else { sel=sel.filter(function(value){return !exclusive(value);}); sel.push(v); }
-          answers[step]=sel.slice(); sync();
-        } else {
-          advancing=true; answers[step]=v; sync();
-          later(next,220);
-        }
-      };
-    });
-    if(cont) cont.onclick=function(){
-      if(advancing || !sel.length) return;
-      advancing=true; cont.disabled=true; answers[step]=sel.slice(); next();
-    };
-    var back=document.getElementById('ssqBack');
-    if(back) back.onclick=function(){ stopTimer(); step--; render(); };
-    sync(); arrange();
-
-  }
-
-  function next(){
-    if(!ov.classList.contains('open') || step>=QS.length) return;
-    ev('quiz_step', {step: step + 1, field: QS[step].label});
-    step++;
-    if (step < QS.length) render(); else loader(0);
-  }
-
-  function loader(i){
-    resetView();
-    setProg(100);
-    body.innerHTML = '<div class="ssq-loader"><div class="ssq-spin"></div>'
-                   + '<h3 class="ssq-loadtitle">' + LOADERS[i] + '</h3>'
-                   + '<p class="ssq-wait">Please wait</p></div>';
-    arrange();
-    later(function(){ i + 1 < LOADERS.length ? loader(i + 1) : result(); }, 1400);
-  }
-
-  function shipDate(){
-    var d = new Date(); d.setDate(d.getDate() + 2);
-    var W = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
-        M = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    return W[d.getDay()] + ', ' + M[d.getMonth()] + ' ' + d.getDate();
-  }
-
-  /* Both quizzes we swiped from are non-branching — their result() never reads the
-     answers, so "based on your responses" is theatre. Forks make it true: the first
-     fork whose `when` matches answers[q] wins, and a fork with no `when` is the default. */
-  function pick(){
-    var F = CFG.forks;
-    if (!F || !F.length) return {};
-    for (var i = 0; i < F.length; i++){
-      var f = F[i];
-      if (f.when == null) return f;
-      var a = answers[f.q];
-      if (a != null && (Array.isArray(a) ? a.indexOf(f.when) > -1 : a === f.when)) return f;
-    }
-    return F[F.length - 1];
-  }
-
-  /* Quote their own answers back. Costs one line and makes the verdict personal. */
-  function echoLine(){
-    var E = CFG.echo;
-    if (!E) return '';
-    var a = answers[E.q];
-    var list = Array.isArray(a) ? a.slice() : (a ? [a] : []);
-    var skip = E.skip || [];
-    list = list.filter(function(v){ return skip.indexOf(v) < 0; });
-    if (!list.length) return E.empty ? '<p class="ssq-echo">' + E.empty + '</p>' : '';
-    var map = E.map || {};
-    var parts = list.map(function(v){ return map[v] || v; });
-    var joined = parts.length === 1 ? parts[0]
-               : parts.slice(0, -1).join(', ') + ' and ' + parts[parts.length - 1];
-    return '<p class="ssq-echo">' + E.lead + ' <b>' + esc(joined) + '</b>' + (E.tail || '') + '</p>';
-  }
-
-  /* Outcome panel: the reader chose what they want back; the panel answers with that
-     exact pick. No outcome config -> fall through to fork/global est fields. */
-  function outcomePick(){
-    var O = CFG.outcome;
-    if (!O) return null;
-    var a = answers[O.q];
-    return (O.map && a != null && O.map[a]) || O.default || null;
-  }
-
-  function urgeLine(){
-    var U = CFG.urgency;
-    if (!U) return '';
-    var a = answers[U.q];
-    var t = (U.map && a != null && U.map[a]) || U.default || '';
-    return t ? '<p class="ssq-urge">' + t + '</p>' : '';
-  }
-
-  /* A: fork-matched review — the page's own reviewers keyed to the buyer's answer.
-     Cohort proof that survives the skeptical-adult-child test because the same person
-     is findable on the page below. When it renders, it takes the product image's slot
-     (proof beats packshot; keeps the result stack from growing). */
-  function reviewPick(){
-    var R = CFG.review;
-    if (!R) return null;
-    var a = answers[R.q];
-    return (R.map && a != null && R.map[a]) || R.default || null;
-  }
-  /* B: the age answer pays rent — one line keyed to answers[q]. */
-  function ageLine(){
-    var A = CFG.ageLine;
-    if (!A) return '';
-    var t = A.map && A.map[answers[A.q]];
-    return t ? '<p class="ssq-age">' + t + '</p>' : '';
-  }
-
-  function result(){
-    resetView();
-    setProg(100);
-    if (card) card.classList.add('res');
-    var f = pick(), oc = outcomePick(), rv = reviewPick();
-    if(!completed) ev('quiz_complete', {fork: f.id || 'default', outcome: (oc && oc.id) || 'none'});
-    completed=true;
-
-    var verdict =
-        '<span class="ssq-badge">' + (f.badge || CFG.badge) + '</span>'
-      + '<h3 class="ssq-restitle">' + (f.title || CFG.title) + '</h3>'
-      + ageLine()
-      + '<div class="ssq-est"><h4>' + ((CFG.outcome && CFG.outcome.label) || CFG.estLabel || '📊 Your estimated results') + '</h4>'
-      +   '<p class="big">' + (oc ? oc.big : (f.estBig || CFG.estBig)) + '</p>'
-      +   '<p>' + (oc ? oc.sub : (f.estSub || CFG.estSub)) + '</p>'
-      + '</div>';
-
-    var offer =
-        echoLine()
-      + urgeLine()
-      + (rv ? '<div class="ssq-rev"><p class="stars">★★★★★ <span class="vp">✓ Verified Purchase</span></p>'
-            + '<p class="rq">“' + rv.quote + '”</p><p class="who">— ' + rv.who + '</p></div>'
-            : (CFG.productImg ? '<div class="ssq-prod"><img src="' + esc(CFG.productImg) + '" alt="" loading="lazy"></div>' : ''))
-      + CFG.scarce
-      + (CFG.hideShip ? '' : '<p class="ssq-ship">🚚 Order now and it arrives by <b>' + shipDate() + '</b></p>')
-      + (CFG.unlock ? '<p class="ssq-unlock">' + CFG.unlock + '</p>' : '')
-      + '<a class="ssq-cta" id="ssqGo" href="' + esc(withParams(ctaHref)) + '"'
-      +   ' target="_blank" rel="noopener nofollow sponsored">' + CFG.cta + '</a>'
-      + (CFG.ctaNote ? '<p class="ssq-ctanote">' + CFG.ctaNote + '</p>' : '');
-
-    /* Everything pressable on the close screen presses (observed v1 result-screen
-       death: the pill badge reads as a button). Body text stays inert. */
-    function wireOffer(){
-      var go = document.getElementById('ssqGo');
-      if (!go) return;
-      go.addEventListener('click', function(){ ev('quiz_cta_click', {}); });
-      ['.ssq-est', '.ssq-prod', '.ssq-rev', '.ssq-badge'].forEach(function(sel){
-        var el = body.querySelector(sel);
-        if (el){ el.style.cursor = 'pointer'; el.addEventListener('click', function(){ go.click(); }); }
-      });
-    }
-
-    /* Two-screen result (config-gated): the one-screen version had grown into a
-       phone-height wall — diagnosis, proof and deal all shouting at once. Split, each
-       screen fits the viewport and has ONE job: screen 1 lands the verdict, screen 2
-       closes. The extra tap is a micro-commitment, and quiz_offer_view measures its
-       cost directly. */
-    if (CFG.resultSplit){
-      body.innerHTML = '<div class="ssq-res">' + verdict
-        + '<button type="button" class="ssq-cta ssq-more" id="ssqMore">'
-        + (CFG.resultSplit.more || 'Continue →') + '</button></div>';
-      var more = document.getElementById('ssqMore');
-      var show = function(){
-        ev('quiz_offer_view', {});
-        body.innerHTML = '<div class="ssq-res">' + offer + '</div>';
-        wireOffer();
-      };
-      if (more) more.onclick = show;
-      ['.ssq-badge', '.ssq-est'].forEach(function(sel){
-        var el = body.querySelector(sel);
-        if (el){ el.style.cursor = 'pointer'; el.addEventListener('click', show); }
-      });
-    } else {
-      body.innerHTML = '<div class="ssq-res">' + verdict + offer + '</div>';
-      wireOffer();
-    }
-    arrange();
-  }
-
-  /* Bind late and defensively: any failure leaves the native CTA behaviour alone. */
-  document.addEventListener('click', function(e){
-    try {
-      var a = e.target && e.target.closest ? e.target.closest(CTA_SEL) : null;
-      if (!a) return;
-      if (ov.contains(a)) return;                                   // the result CTA itself
-      if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return;  // let power-clicks through
-      open(a.getAttribute('href'));
-      e.preventDefault();
-    } catch(err){ stopTimer(); ov.classList.remove('open'); document.body.classList.remove('ssq-mobile-open'); document.body.style.overflow=previousOverflow; }
-  }, true);
-
-  var x = document.getElementById('ssqClose');
-  if (x) x.onclick = close;
-  // Background taps do not dismiss or replace the current question.
-  document.addEventListener('keydown',function(e){
-    if(!ov.classList.contains('open')) return;
-    if(e.key==='Escape'){ e.preventDefault(); close(); }
-    if(e.key==='Tab'){
-      var nodes=Array.prototype.filter.call(ov.querySelectorAll('button:not(:disabled),a[href]'),function(el){return el.getClientRects().length;});
-      if(!nodes.length) return;
-      var first=nodes[0],last=nodes[nodes.length-1],active=document.activeElement;
-      if(e.shiftKey && (active===first || nodes.indexOf(active)===-1)){e.preventDefault();last.focus();}
-      else if(!e.shiftKey && (active===last || nodes.indexOf(active)===-1)){e.preventDefault();first.focus();}
-    }
-  });
-})();
-</script>
-<style id="ssq-mobile-repair">/* SlimSoda FB mobile quiz repair, 2026-09-11. */
-body.ssq-mobile-open .sticky-cta,body.ssq-mobile-open #sticky-cta,body.ssq-mobile-open .sticky-bar{display:none!important}
-#ssqOverlay[data-ssq-build]{box-sizing:border-box;overscroll-behavior:contain}
-#ssqOverlay[data-ssq-build] *{box-sizing:border-box}
-#ssqOverlay[data-ssq-build] .ssq-card{display:flex;flex-direction:column;max-height:calc(100dvh - 64px);padding:54px 22px 0;overflow:hidden}
-#ssqOverlay[data-ssq-build] .ssq-progress{flex:none;margin:0 0 16px}
-#ssqOverlay[data-ssq-build] #ssqBody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:0 2px 20px}
-#ssqOverlay[data-ssq-build] .ssq-footer{flex:none;background:#fff;border-top:1px solid #d8e0ec;padding:12px 0 max(12px,env(safe-area-inset-bottom));z-index:2}
-#ssqOverlay[data-ssq-build] .ssq-footer:empty{display:none}
-#ssqOverlay[data-ssq-build] .ssq-opt{min-height:56px;padding:14px 16px;font-size:17px;line-height:1.4;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-opts{gap:10px}
-#ssqOverlay[data-ssq-build] .ssq-emo{font-size:21px}
-#ssqOverlay[data-ssq-build] .ssq-close{top:3px;right:6px;width:48px;height:48px;padding:0;font-size:28px;color:#53647b;z-index:3;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-back{min-height:48px;padding:12px;font-size:15px;margin:4px 0 0;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-continue,#ssqOverlay[data-ssq-build] .ssq-cta{min-height:56px;font-size:17px;padding:16px;line-height:1.3;margin:0;animation:none;transform:none;touch-action:manipulation}
-#ssqOverlay[data-ssq-build] .ssq-q{font-size:23px;line-height:1.25;padding:0;margin:0 0 12px}
-#ssqOverlay[data-ssq-build] .ssq-kicker{font-size:12px;margin:0 0 8px;padding:0}
-#ssqOverlay[data-ssq-build] .ssq-hint,#ssqOverlay[data-ssq-build] .ssq-pre{font-size:15px;line-height:1.5}
-#ssqOverlay[data-ssq-build] .ssq-hint{margin-bottom:16px}
-#ssqOverlay[data-ssq-build] .ssq-opt.sel{background:#e8f3e3;border-color:#367b19}
-#ssqOverlay[data-ssq-build] .ssq-opt[data-multi="true"]:after{content:'';width:23px;height:23px;border:2px solid #8999ac;border-radius:5px;flex:none;margin-left:auto}
-#ssqOverlay[data-ssq-build] .ssq-opt[data-multi="true"].sel:after{content:'✓';color:white;background:#367b19;border-color:#367b19;text-align:center;line-height:19px;font-size:17px}
-#ssqOverlay[data-ssq-build] :focus-visible{outline:3px solid #2473ba;outline-offset:2px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-restitle{font-size:23px;line-height:1.3;margin:12px 0}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-badge{font-size:12px;max-width:100%;padding:7px 12px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est{padding:14px;margin:12px 0}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est h4{font-size:12px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est .big{font-size:21px}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-est p,#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-ship,#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-unlock{font-size:15px;line-height:1.5}
-#ssqOverlay[data-ssq-build] .ssq-card.res .ssq-scarce span{font-size:13px;line-height:1.5}
-#ssqOverlay[data-ssq-build] .ssq-prod img{max-width:340px}
-@media(max-width:768px){
- #ssqOverlay[data-ssq-build]{padding:0;overflow:hidden;background:#fff}
- #ssqOverlay[data-ssq-build] .ssq-card,#ssqOverlay[data-ssq-build] .ssq-card.res{width:100%;max-width:none;height:100vh;height:100dvh;max-height:none;margin:0;border-radius:0;box-shadow:none;padding:calc(54px + env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left))}
- #ssqOverlay[data-ssq-build] .ssq-close{top:calc(3px + env(safe-area-inset-top));right:max(6px,env(safe-area-inset-right))}
-}
-</style>
-<!-- SSQ-QUIZ-GATE:END -->
 
 </body>
 </html>
